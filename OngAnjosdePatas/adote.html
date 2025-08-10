@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <link rel="stylesheet" href="css/form.css"/>
+    <script src="https://cdn.gtranslate.net/widgets/latest/fn.js" defer></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <title>Anjos de patas</title>
+</head>
+<body class="menu2" id="estrutura">
+    <div id="container2">
+    <!--Cabeçalho e menu-->
+    <div id="navegue">
+    <section id="navegar"></section>
+        <header id="menuAlinhado"> <!--Menu/Navegações de páginas-->
+        <h1 id="titulo">Anjos de Patas</h1>
+        <nav>
+            <ul><!--Acesso as páginas-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="animais.html">Conheça nossos animais</a></li>
+                <li><a href="doacao.html">Ajude</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="gtranslate_wrapper"></div>
+    </section>
+    <article>
+        <div id="pgFormulario">
+        <div id="agradecimento">
+        <h2>Oba! Estamos felizes que você escolheu adotar!</h2>
+<p> Você está prestes a transformar uma vida e a sua também! <br>
+Adotar é um ato de amor, e nós do Anjos de Patas agradecemos de coração por fazer parte dessa causa tão especial!</p>
+    </div>
+    <section id="form">
+            
+        <form name="frmAdocao" id="frmAdocao" method="post" action="resposta.html" onsubmit="return adocaoResp()">
+        <fieldset>
+            <legend>Pedido de adoção</legend>
+                    <label for="pet">Pet*</label><br>
+                    
+                    <input type="radio" id="opcCao" name="pet" value="cao" >
+                    <label for="cao" name="Cao" id="cao"><i class="fa-solid fa-dog"></i></label>
+                    <input type="radio" id="opcGato" name="pet" value="gato" >
+                    <label for="gato" name="gato" id="gato"><i class="fa-solid fa-cat"></i></label>
+                    <br>
+                    <label for="txtPet">Nome do pet:</label>
+                    <br>
+                    <input type="text" name="opcPet" id="opcPet" class="txtPet" placeholder="Nome/apelido do pet" >
+                    <br>
+                    <hr>
+                    <label for="txtNome">* Nome do adotante</label>
+                    <input type="text" name="txtNome" id="txtNome" class="conteudo" placeholder="Seu nome" /><!-- caixa de texto  -->
+                    <br>
+                    <label for="txtIdd">* Idade</label>
+                    <input type="number" name="txtIdd" id="txtIdd" class="conteudo" value="" placeholder="Exemplo: 21" />
+                    <br>
+                    <label for="txtContato">* Telefone</label>
+                    <input type="tel" name="txtCtt" id="txtCtt" class="conteudo" placeholder="(00) 00000-0000" />  <!-- text area  -->
+                    <br>
+                    <label for="txtEmail">* Email</label>  
+                    <input type="email" name="txtEmail" id="txtEmail" class="conteudo" placeholder="Email@email.com.br" />
+                    <br>
+                    <label for="txtEndereco">* Endereço completo</label>
+                    <input type="text" name="txtEndereco" id="txtEndereco" class="conteudo" placeholder="N°, Rua, bairro,cidade..." />
+                    <br>
+                    <label for="txtCep">* CEP</label>
+                    <input type="text" name="txtCep" id="txtCep" class="conteudo" placeholder="00000-000"/>
+                    <br>
+                    <label for="txtComplemento">* Complemento(opcional)</label>
+                    <input type="text" name="txtComplemento" id="txtComplemento" class="conteudo" placeholder="Casa, apartamento..." />
+                    <br>
+                    <hr>
+                    <p>As perguntas abaixo não são obrigatórias, mas facilitarão a analise para sua adoção. </p>
+                    <br>
+                    <p>Possui área externa para o lazer do pet?</p>
+                   
+                    <input type="radio" id="opcSim" name="area" value="sim">
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="nao" name="area" value="não">
+                    <label for="nao">Não</label>
+                    <input type="radio" id="talvez" name="area" value="">
+                    <label for="talvez">Estou providenciando</label>
+                    <p>Se sim, nos envie uma imagem do local para termos uma melhor avaliação sobre seu pedido:</p>
+                    <input type="file" name="txtfile" id="txtfile" class="file" >
+                    <!-- Botão -->
+                    <br>
+                    <input type="submit" value="Finalizar Adoção" class= "btnForm" id="txtEnviar" name="txtEnviar" > <!-- botão-tipo do botão - valor que vai dentro do botão  -->
+        </fieldset>
+        </form>
+        </div>
+      
+</section>
+  </article>
+    
+<!--Informações de contato e endereço-->
+<footer id="">
+    <div id="informar">
+ <a id="logo" href="#"><i class="fab fa-facebook-f"></i></a>
+ <a id="logo2" href="#"><i class="fab fa-instagram"></i></a>
+     </div>
+         <!--Voltar ao inicio-->
+     
+     <div id="botao">
+ <a href="#titulo" id="botao">Voltar ao Inicio  &uparrow;</a>
+ </div>
+     </footer>
+     </div>
+     <!--.div.container = criar automaticamente uma div com class container
+     div#"exemplo" = criar automaticamente uma div com id "exemplo"-->
+ </div>
+ </body>
+ </html>

@@ -1,0 +1,669 @@
+/* ========================
+   CONFIGURAÇÕES GLOBAIS
+=========================== */
+html, body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    background-color: #f5faff;
+    min-height: 100vh;
+}
+
+
+#container{
+    padding: 0;
+    margin: 0 auto; /* 0 - direita, Auto - esqueda, 0 - cima, auto - baixo  */
+    background-color: #b9ddff;
+    background-size: 100%;
+    height: 100%;
+    position: relative;/*posição dos elementos a partir do seu antecessor, nesse caso ele esta relativo ao seu antecessor */ 
+}
+/* ========================
+   MENU DE NAVEGAÇÃO
+=========================== */
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 20px 40px;
+
+}
+header nav ul {
+    margin-top: 12px;
+    margin: 12px auto 0 auto;
+    justify-content: center;
+    padding: 0;
+    display: flex;
+    float: left;
+    list-style-type: none; /*tirou o efeito de lista*/
+}
+
+ul li {
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif ;
+    padding: 20px;/*distancia entre os elemento */
+}
+
+ul li a{
+
+    text-decoration: none;
+    color: #003366;
+}
+
+header nav ul li a:hover{
+
+    color: white;
+    background-color: #ccc;
+}
+
+
+#titulo{
+    margin-top: 22px;/*distancia das margens*/
+    margin-left: 40px;
+    color: #003366;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+/* Referências
+top= cima
+bottom= embaixo
+right= direita
+left= esquerda
+*/
+#frasetitulo{
+ color: #003366;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;/*Define a fonte de texto*/
+ font-size: 50px; /*Define o tamanho do elemento*/
+}
+
+h3{
+    color: #003366;
+    font-family: arial;
+}
+
+/*/////////////
+/Banner Index/
+////////////*/
+.menu{
+    background-image: url('../img/caoegato1400.jpg'); /*imagem como elemento de fundo*/
+    background-position: center -120px; /*define a posição da imagem*/
+    background-size: cover; /*Redmensiona para cobrir toda a area*/
+    background-repeat: no-repeat; /*Não deixa a imagem se repetir*/
+    height: 608px;
+}
+/*/////////////////////////
+/Doe tempo, amor e carinho/
+/////////////////////////*/
+#frase{
+    margin-top: 18%;
+    margin-left: 3%;
+}
+
+/*/////////////////
+/Inicio dos Blocos/
+/////////////////*/
+#blocoInicio{
+    position: relative;
+    height: 100%;
+}
+
+.blocos{
+    display: grid; /*grade= layot para organização de elementos bidimensionais por linhas e colunas*/
+    grid-template-columns: 1fr 1fr; /*defina da quantidade e largura das colunas*/
+    grid-template-rows: auto auto; /*definição da quantidade e altura das linhas*/
+    row-gap: 30px;
+    column-gap: 0px; /*define o espaçamento entre as linhas e colunas*/
+    padding: 40px;
+    text-align: center;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 50px;
+}
+/* row = linhas
+    col = colunas*/
+
+
+    /*////////////////////
+    /Blocos de informação/
+    ////////////////////*/
+.blocosInfor{
+    
+    display: block;
+    background-color: white; 
+    align-items:center; /*Alinhamento dos itens*/
+    border: 1px solid white;
+    border-radius: 20px; /*largura da borda*/
+    height: 100%;
+    width: 85%;
+}
+
+p{
+    width: 95%;
+    text-align: left;
+    padding-left: 18px;
+}
+
+footer{
+    background-color: white;
+    height: 50px;
+    padding: 22px;
+    text-align: center;
+}
+footer a{
+    color: white;
+}
+/*botao inicio*/
+#botao{
+    text-align: right;
+    text-decoration: none;
+    color: black;
+}
+
+#botao:hover {
+    color: #0055aa;
+}
+/*instagram facebook*/
+#logo, #logo2{
+    color: white;
+    background-color: #363636;
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+    border-radius: 50%;
+    border: none;
+}
+/*/////////////
+//Bloco Pets//
+////////////*/
+#blcResgatados{
+    color: #003366;
+    text-align: center;
+    font-size: 28px;
+}
+.animais{
+    background-color: white;
+    min-width: 90%;
+    width: auto;
+    border-radius: 20px;
+}
+#fotos{
+    display: flex;
+    justify-content: center;/* duas colunas com largura igual */
+    gap: 100px; /* espaço entre as imagens */
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+#fotos img {
+    max-width: 300px;
+    max-height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: perspective(800px)rotate(0deg);
+    transition: transform 0.3s , box-shadow 0.3s;
+}
+
+#fotos img:hover{
+    transform: perspective(800px)rotateX(0deg)translateY(-5px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+.dados{
+    color: black;
+    font-family:'Times New Roman', Times, serif ;
+    font-size:medium ;
+    text-align: center;
+    background: #b9ddff;
+    border-left: 10px solid #0055aa;
+    border-radius: 3px;
+    padding: 5px;
+}
+#btnAdote{
+    display: inline-block;
+    margin:10px;
+    background:#0055aa;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s ease;
+
+}
+/* ========================
+   PAGINA QUEM SOMOS
+=========================== */
+.menu2{
+    padding: 0;
+    margin: 0;
+}
+#menuAlinhado{
+    background:linear-gradient(to right,#6ca9e3, #b9ddff); /*usado para criar degradê de cores*/
+   /* background-image: url(../img/gatinho150.png);*/
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 20px 40px;
+    height: 70px;
+}
+#nossaHistoria{
+    font-size: 40px;
+    color: #003366;
+}
+#container2{
+    background-color: white;
+    }
+
+#imagem{
+    margin-right:70px;
+
+}
+#sobrenos h2{
+    text-align: left;
+    margin-left: 35px;
+}
+.apresentacao p{
+    text-align: left;
+    font-size: 20px;
+    width: 85%;
+    margin-left: 35px;
+}
+#rodape{
+    background-color: #b9ddff;
+}
+
+/* ========================
+  PAGINA CONHEÇA OS ANIMAIS
+=========================== */
+#containerPets{
+    background-color: #b9ddff;
+    position: relative;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+#boasVindas{
+    text-align: center;
+    font-size: 40px;
+    color: #003366;
+}
+
+/* ========================
+  FOTOS DOS ANIMAIS
+=========================== */
+.ftPets img{
+    position: relative;
+    height: 300px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+.blcAdocao{
+    display: flex;
+    background-color: white;
+    border-radius: 16px;
+    height: 370px;
+    width: 80%;
+    margin: 20px;
+   
+}
+.blcAdocao p{
+    padding-top: 30px ;
+    font-size: larger;
+    text-align: left;
+}
+
+/*/////////////
+/Botão adotar/
+////////////*/
+
+.btnAdotar{
+    position: relative;
+    text-align: center;
+    font-size: medium;
+    background:#0055aa;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 11px 22px;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+.ftPets a{
+    text-decoration: none;
+}
+
+.btnAdotar:hover{
+    position: relative;
+    text-align: center;
+    font-size: medium;
+    color: #0055aa;
+    background: #8cc5fa;
+    border: 3px solid #0055aa;
+    border-radius: 2px;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 9px 20px;
+    cursor: pointer;
+}
+/* ========================
+   PAGINA AJUDE
+=========================== */
+
+#ajude{
+    position: relative;
+    padding: 2px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    background-color: #003366;
+}
+#nosAjude{
+    height: 100%;
+    width: auto;
+    margin: 20px;
+    font-size: 25px;
+  
+}
+#nosAjude h3{
+    color: #003366;
+    background: linear-gradient(to right,#8cc5fa,transparent);
+    border-left: 5px solid #003366;
+    border-radius: 8px ;
+    padding-left: 8px;
+}
+#nosAjude p, svg, ul li{
+    font-size: 22px;
+    color: #003366;
+}
+#pix{
+    height: 200px;
+    width: 400px;
+    font-size: 20px;
+    text-align: left;
+    border: 5px solid #0055aa;
+    border-radius: 20px;
+}
+#pix h4{
+    color: #003366;
+    padding-left: 13px;
+    font-size: 28px;
+}
+@media screen and (max-width: 1482px){
+    .menu{
+        height: 620px;
+    }
+    #frasetitulo{
+        font-size: 50px;
+    }
+
+    #fotos{
+        display: grid;
+       grid-template-columns: auto auto;
+    }
+}
+
+/* Responsivo para até 900px */
+@media screen and (max-width: 900px) {
+    .topo, #menuAlinhado {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        text-align: center;
+    }
+    .menu{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 656px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        float: none;
+        margin: 0;
+        opacity: 50%;
+        background-color: white;
+    }
+
+    ul li {
+        padding: 10px;
+    }
+
+    #titulo {
+        margin: 10px 0;
+        font-size: 40px;
+    }
+    #frasetitulo{
+       
+        font-size: 50px;
+        padding-top: -4%;
+    }
+
+    .blocos {
+        grid-template-columns: 1fr;
+        padding-top: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #fotos {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .blcAdocao {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .blcAdocao p {
+        font-size: medium;
+        padding: 10px;
+    }
+
+    .ftPets img {
+        width: 200px;
+        height: 270px;
+    }
+
+    #ajude{
+        font-size: 20px;
+    }
+    #nosAjude{
+        font-size: 18px;
+    }
+    #nosAjude p, svg, ul li{
+        font-size: 15px;
+    }
+    #pix {
+        width: 400px;
+    }
+    #pix h4{
+        font-size: 22px;
+        padding-top: 20px;}
+}
+/* ==== Telas até 600px ==== */
+@media screen and (max-width: 600px) {
+    /* Menu e cabeçalho */
+    .topo, #menuAlinhado {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+    }
+    .menu{
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #titulo {
+        font-size: 35px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    ul li {
+        padding: 10px;
+        ;
+    }
+
+    /* Banner */
+    #frasetitulo {
+
+        font-size: 50px;
+        margin-top: 40%;
+        margin-left: 4px;
+    }
+
+    /* Blocos da index */
+    .blocos {
+        grid-template-columns: 1fr;
+        margin: 0 10px;
+        padding: 20px;
+    }
+
+    .blocosInfor {
+        width: 95%;
+        margin: auto;
+    }
+
+    /* Fotos dos pets */
+    #fotos {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #fotos img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    /* Blocos adoção */
+    .blcAdocao {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .blcAdocao p {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .ftPets img {
+        width: 90%;
+        height: auto;
+    }
+
+    /* Botões */
+    .btnAdotar {
+        width: 90%;
+        display: block;
+        margin: 10px auto;
+        font-size: 16px;
+    }
+
+    #btnAdote {
+        width: 90%;
+        font-size: 16px;
+        padding: 10px;
+        margin: 20px auto;
+        display: block;
+        text-align: center;
+    }
+
+    /* Página Ajude */
+    #nosAjude {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    #pix {
+        width: 400px;
+        height: auto;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #pix h4 {
+        font-size: 22px;
+    }
+
+    /* Rodapé */
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #logo, #logo2 {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* ==== Telas até 480px ==== */
+@media screen and (max-width: 480px) {
+    #titulo {
+        font-size: 28px;
+    }
+
+    #frasetitulo {
+        font-size: 30px;
+    }
+
+    .blocosInfor p,
+    .blcAdocao p,
+    .apresentacao p {
+        font-size: 15px;
+    }
+
+    .btnAdotar,
+    #btnAdote {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    #pix {
+        font-size: 15px;
+    }
+
+    #nosAjude h3,
+    #pix h4 {
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    #logo, #logo2 {
+        font-size: 12px;
+        padding: 6px;
+    }
+}

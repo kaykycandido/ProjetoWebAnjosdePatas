@@ -1,0 +1,151 @@
+/*//////////////////
+///FORMULARIO ADOTE/
+//////////////////*/
+#pgFormulario{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+article h2{
+    margin: 0px !important;
+}
+#agradecimento{
+    position: relative;
+    margin: 0;
+    padding-top: 0;
+    background-color: #003366;
+    height: 200px;
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+/*position: relative;
+    background-color: #d9ecff;
+    border-left: 5px solid #3399ff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);*/
+}
+#agradecimento p{
+
+    text-align: left;
+    font-size: x-large;
+}
+#form{
+    background-color: #b9ddff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 100%;
+    object-fit: cover;/*garantir que as imagens mantenham sempre o mesmo tamanho sem deformar, mesmo que corte um pouco*/
+    object-position: center;/*mante-las sempre centralizadas*/
+    padding-bottom: 30px;
+
+}
+fieldset{
+    display: block;
+    color: #003366;
+    font-size: larger;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0);
+    margin: auto;
+    width: 60%;
+ 
+}
+fieldset p{
+    text-align: center;
+}
+legend{
+    color: #003366;
+    font-family: arial;
+    font-size: xx-large;
+}
+label{
+    display: inline-block;
+    padding: 10px;
+
+}
+#cao, #gato{
+    padding: 20px;
+    font-size: 50px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+.btnForm{
+    color: white;
+    background-color: #003366;
+    border-radius: 2px;
+    font-size: large;
+}
+
+#txtEnviar{
+    margin-top: 20px;
+}
+@media screen and (max-width: 900px) {
+    fieldset {
+        width: 90%;
+    }
+
+    #agradecimento {
+        font-size: large;
+        padding: 20px;
+        height: auto;
+    }
+
+    #agradecimento p {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    fieldset {
+        width: 90%;
+    }
+
+    #agradecimento {
+        font-size: large;
+        padding: 20px;
+        height: auto;
+    }
+
+    #agradecimento p {
+        font-size: medium;
+    }
+
+    label, input, textarea {
+        width: 100%;
+        display: block;
+        margin: auto;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    legend {
+        font-size: large;
+    }
+
+    .btnForm {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #txtEnviar {
+        font-size: medium;
+    }
+
+    #cao, #gato {
+        font-size: 30px;
+        padding: 10px;
+    }
+}

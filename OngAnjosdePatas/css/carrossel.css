@@ -1,0 +1,52 @@
+.carrossel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.imagens {
+  display: flex;
+  inline-size: cover;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.imagens img {
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+
+/* Botões */
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2rem;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.btn-prev {
+  left: 10px;
+}
+
+.btn-next {
+  right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .btn {
+    font-size: 1.5rem;
+    padding: 6px;
+  }
+}
