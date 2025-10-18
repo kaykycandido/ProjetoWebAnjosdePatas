@@ -1,5 +1,7 @@
+
+        ////Ver como funciona window.addEventListener
 window.addEventListener("DOMContentLoaded", function () {
-  const imagens = document.getElementById("carrosselImagens");
+  const imagens = document.getElementById("carrosselImagens");//Constante com imagens do carrosel
   const slides = imagens.children;
   const total = slides.length;
 
@@ -27,6 +29,7 @@ window.addEventListener("DOMContentLoaded", function () {
   }
 
   // Avança automaticamente
+  ///Estudado em aula
   setInterval(() => mover(1), 4000);
 
   // Botões manuais
@@ -72,7 +75,9 @@ function mostrarMensagemAdocao() {
     var inputTxtEndereco = document.getElementById("txtEndereco");
     var inputTxtCep = document.getElementById("txtCep");
     var inputTxtComplemento = document.getElementById("txtComplemento");
-
+////////////////
+//// Bliblioteca Swal.fire
+////////////////
     if (
         inputTxtNome.value &&
         inputTxtCtt.value &&
